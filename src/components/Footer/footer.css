@@ -1,0 +1,12 @@
+footer{
+    font-size: 1.2rem;
+    font-family: 'Amaranth';
+    /* position: fixed; */
+    top: auto;
+    height: 3rem;
+    width: 100%;
+}
+
+.nonThemeColor {
+    color: #a2c11c;
+}
