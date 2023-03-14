@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-// import EducationImg from 'public/booksPhoto.jpg';
+import EducationImg from '/Users/lauren/code/personal/portfolio/killer-portfolio/Portfolio/src/components/asset/booksPhoto.png';
 // import EducationData from "../../Data/EducationData";
 import Certifications from "../Certifications/Certifications";
 import Degree from "./Degree";
