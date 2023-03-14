@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import EducationImg from "/Users/lauren/code/personal/portfolio/killer-portfolio/Portfolio/src/components/asset/svg/booksPhoto.jpg";
-import EducationData from "../../Data/EducationData";
+import EducationImg from "/Users/lauren/code/personal/portfolio/killer-portfolio/Portfolio/src/components/asset/booksPhoto.jpg";
+// import EducationData from "../../Data/EducationData";
 import Certifications from "../Certifications/Certifications";
 import Degree from "./Degree";
 import classes from "./education.module.css";
