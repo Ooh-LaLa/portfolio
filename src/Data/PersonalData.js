@@ -3,7 +3,7 @@ const PersonalData = {
     lastName: "Tozzi",
     email:"laurentozzi.code@gmail.com",
     aboutMe:"Lorem Ipsum",
-    resumeLink:'#'
+    resumeLink: "resume.pdf"
 }
 export const autoTypeData=['Fullstack Software Engineer', 'MERN Stack Developer', 'Junior Developer'];
 export default PersonalData;
