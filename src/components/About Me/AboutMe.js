@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import classes from './aboutMe.module.css';
-import Photo from '/Users/lauren/code/personal/portfolio/killer-portfolio/Portfolio/src/components/asset/svg/personalPhoto.png';
+import Photo from '../asset/svg/personalPhoto.png';
 import PersonalData from '../../Data/PersonalData';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import Button from "../UI/Button";
