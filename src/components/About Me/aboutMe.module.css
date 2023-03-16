@@ -18,7 +18,7 @@
     border-radius: 50%;
     height: 25rem;
     width: 25rem;
-    object-fit: contain;
+    object-fit: cover;
     animation: renderFromLeft 1s ease forwards;
 }
 .contactCard{
