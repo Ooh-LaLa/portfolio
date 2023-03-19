@@ -9,11 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* background-color: aquamarine; */
-    /* width: 50%; */
+    margin-left: 200px;
 }
 .avatar img{
-    margin-top: 2rem;
+    margin-top: 1rem;
     border: 5px solid;
     border-radius: 50%;
     height: 25rem;

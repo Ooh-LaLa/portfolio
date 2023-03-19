@@ -45,6 +45,8 @@
 .moreProject {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 18px;
+	padding-top: 8px;
 }
 @media (max-width: 768px) {
 	.projects {
