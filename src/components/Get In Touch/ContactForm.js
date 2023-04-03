@@ -109,7 +109,7 @@ const ContactForm = (props) => {
                     <input value={enteredName}
                         onBlur={nameBlurHandler}
                         onChange={nameChangedHandler}
-                        type="text"
+                        type="hidden"
                         className={nameInputClasses}
                         placeholder="Name"
                         name="form-name"
