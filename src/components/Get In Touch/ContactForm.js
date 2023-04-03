@@ -85,12 +85,12 @@ const ContactForm = (props) => {
     const finishEnteringHandler=()=>{
         setIsEntering(false);
       }
-      const formFocussedHandler = () => {
+      const formFocusedHandler = () => {
         setIsEntering(true);
       };
     const nameInputClasses = nameInputHasError ? `${classes.Inputs} ${classes.invalidInput}` : classes.Inputs;
     const emailInputClasses = emailInputHasError ? `${classes.Inputs} ${classes.invalidInput}` : classes.Inputs;
-    const phoneInputClasses = phoneInputHasError ? `${classes.Inputs} ${classes.invalidInput}` : classes.Inputs;
+    // const phoneInputClasses = phoneInputHasError ? `${classes.Inputs} ${classes.invalidInput}` : classes.Inputs;
     const messageInputClasses = messageInputHasError ? `${classes.Inputs} ${classes.invalidInput}` : classes.Inputs;
     const formClasses = isSent ? `${classes.contactForm} ${classes.sent}` : classes.contactForm;
 
@@ -102,33 +102,38 @@ const ContactForm = (props) => {
             />
             <div className={classes.contactFormCard}>
                 <h1 style={{ color: nonThemeColor }}>Leave A Message</h1>
-                <form onFocus={formFocussedHandler} action="" onSubmit={formSubmitHandler} className={formClasses}>
+                <form onFocus={formFocusedHandler} action="" onSubmit={formSubmitHandler} className={formClasses} netlify-honeypot="bot-field" data-netlify="true">
+                <p class="hidden">
+				<label hidden="true"><input name="bot-field"/></label>
+			</p>
                     <input value={enteredName}
                         onBlur={nameBlurHandler}
                         onChange={nameChangedHandler}
                         type="text"
                         className={nameInputClasses}
-                        placeholder="First Name"
+                        placeholder="Name"
+                        name="name"
                         disabled={isSent}
                     />
-                    <input type="text"
+                    {/* <input type="text"
                         id="lName"
                         value={enteredLName}
                         onChange={lastNameChangeHandler}
                         className={classes.Inputs}
                         placeholder="Last Name"
                         disabled={isSent}
-                    />
+                    /> */}
 
                     <input value={enteredEmail}
                         onBlur={emailBlurHandler}
                         onChange={emailChangedHandler}
                         type="email"
                         className={emailInputClasses}
+                        name="email"
                         placeholder="Email"
                         disabled={isSent}
                     />
-                    <input value={enteredPhone}
+                    {/* <input value={enteredPhone}
                         onBlur={phoneBlurHandler}
                         onChange={phoneChangedHandler}
                         type="text"
@@ -137,7 +142,7 @@ const ContactForm = (props) => {
                         minLength={10}
                         maxLength={12}
                         disabled={isSent}
-                    /><br />
+                    /><br /> */}
                     <textarea
                         value={enteredMessage}
                         onBlur={messageBlurHandler}
