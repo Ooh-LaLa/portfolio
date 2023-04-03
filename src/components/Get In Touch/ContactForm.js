@@ -63,9 +63,8 @@ const ContactForm = (props) => {
             return;
         }
         const message={
-            name:enteredName+enteredLName,
+            name:enteredName,
             email:enteredEmail,
-            phone:enteredPhone,
             message:enteredMessage
         }
         finishEnteringHandler();
@@ -74,9 +73,10 @@ const ContactForm = (props) => {
     
     const sendMessageHanlder=async(message)=>{
         setBtnText((prevValue)=>'Sending ...');
-        await fetch('https://react-redux-47ef8-default-rtdb.firebaseio.com/portfolio-messages.json',{
+        await fetch({
             method:'POST',
-            body:JSON.stringify(message)
+            body:JSON.stringify(message),
+            headers: { "Content-Type": "application/x-www-form-urlencoded" }
         });
         setIsSent(true);
         setBtnText((prevValue) => 'Message Sent');
@@ -112,7 +112,7 @@ const ContactForm = (props) => {
                         type="text"
                         className={nameInputClasses}
                         placeholder="Name"
-                        name="name"
+                        name="form-name"
                         disabled={isSent}
                     />
                     {/* <input type="text"
