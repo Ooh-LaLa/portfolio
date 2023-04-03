@@ -106,23 +106,26 @@ const ContactForm = (props) => {
                 <p class="hidden">
 				<label hidden="true"><input name="bot-field"/></label>
 			</p>
-                    <input value={enteredName}
+                    <input type="text"  
+                        id="fName"
+                        value={enteredName}
                         onBlur={nameBlurHandler}
                         onChange={nameChangedHandler}
-                        type="hidden"
+                    
                         className={nameInputClasses}
-                        placeholder="Name"
+                        placeholder="First Name"
                         name="form-name"
                         disabled={isSent}
                     />
-                    {/* <input type="text"
+                    <input type="text"
                         id="lName"
                         value={enteredLName}
                         onChange={lastNameChangeHandler}
                         className={classes.Inputs}
                         placeholder="Last Name"
                         disabled={isSent}
-                    /> */}
+                        name="form-name"
+                    />
 
                     <input value={enteredEmail}
                         onBlur={emailBlurHandler}
