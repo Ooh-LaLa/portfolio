@@ -2,7 +2,7 @@ let certificationsList=[
     {
         title:"SEI BootCamp",
         instructor:"David Stinson",
-        link:"#",
+        link:"certificate.pdf",
         platform:'GA'
     },
   
