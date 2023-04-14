@@ -5,6 +5,9 @@
     margin: 0rem auto;
     font-family: "Amaranth";
 }
+h2{
+    padding-top: 70px;
+}
 .eduImg{
     margin: 3rem auto;
     height: 30rem;
@@ -22,7 +25,7 @@
     gap: 1rem;
     align-items: center;
     /* background-color: aqua; */
-    /* animation: renderFromRight 0.5s ease forwards; */
+    animation: renderFromRight 0.5s ease forwards;
 }
 .educationCard h1{
     font-size: 5rem;
