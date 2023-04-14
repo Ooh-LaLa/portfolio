@@ -29,9 +29,9 @@ function Degrees(props) {
                         <h3 style={{ color: nonThemeColor }}>
                             
                             {item.couseStartYear} - {item.courseEndYear}</h3>
-                        <h1 style={{ color: nonThemeColor }}>{item.collegeName}</h1>
+                        <h1 style={{ color: uiColor }}>{item.collegeName}</h1>
                         <h2 style={{ color: nonThemeColor }}>{item.courseName}</h2>
-                        <h4 style={{ color: nonThemeColor }}>{item.details}</h4>
+                        <h4 style={{ color: uiColor }}>{item.details}</h4>
                     </div>
                 </Card>
                         )}
