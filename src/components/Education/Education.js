@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import EducationImg from '../asset/booksPhoto.png';
 // import EducationData from "../../Data/EducationData";
 import Certifications from "../Certifications/Certifications";
-import Degree from "./Degree";
+import Degrees from "./Degrees";
 import classes from "./education.module.css";
 import { useSelector } from "react-redux";
 
@@ -15,7 +15,7 @@ function Education(props) {
         <Fragment>
             <div className={classes.educationHeader}>
                 <div className={classes.eduImg}>
-                    <img src={EducationImg} alt="" srcset="" />
+                    <img src={EducationImg} alt="" srcSet="" />
                 </div>
                 <div className={classes.educationCard}>
                     <h1 style={{color:uiColor}}>Education</h1>
@@ -33,7 +33,7 @@ function Education(props) {
                     </div>
                 </div>
             </div>
-            <Degree />
+            <Degrees />
             <Certifications />
         </Fragment>
     )

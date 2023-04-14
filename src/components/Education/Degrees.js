@@ -7,7 +7,7 @@ import Card from "../UI/Card";
 import EducationData from "../../Data/EducationData"
 import { useSelector } from "react-redux";
 
-function Degree(props) {
+function Degrees(props) {
 
     const uiColor=useSelector(state=>state.uiColor);
     const nonThemeColor = useSelector(state => state.nonThemeColor);
@@ -20,22 +20,23 @@ function Degree(props) {
             <div className={classes.degreeCard}>
                 <div className={`${classes.degreeImage} centered`} style={{borderColor:uiColor}}>
                     {/* <img src={UniversityImg} alt="degree" srcset="" /> */}
+                 
                 </div>
-                <Card className={classes.degreeWrapper}>
+                        {EducationData.map((item, index) =>
+                // <ul className={classes.EducationData}>
+                <Card  key={index} className={classes.degreeWrapper}>
                     <div className={classes.degreeInfo}>
-                        <h3 style={{ color: nonThemeColor }}>{EducationData.couseStartYear} - {EducationData.courseEndYear}</h3>
-                        <h1 style={{ color: uiColor }}>{EducationData.collegeName}</h1>
-                        <h2 style={{ color: nonThemeColor }}>{EducationData.courseName}</h2>
+                        <h3 style={{ color: nonThemeColor }}>
+                            
+                            {item.couseStartYear} - {item.courseEndYear}</h3>
+                        <h1 style={{ color: uiColor }}>{item.collegeName}</h1>
+                        <h2 style={{ color: nonThemeColor }}>{item.details}</h2>
                     </div>
-                    <ul className={classes.details}>
-                        {EducationData.details.map((item, index) =>
-                            <li key={index}>{item}</li>
-                        )}
-                    </ul>
                 </Card>
+                        )}
             </div>
         </div>
     )
 }
 
-export default Degree;
+export default Degrees;

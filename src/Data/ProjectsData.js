@@ -2,7 +2,7 @@ const DUMMY_PROJECTS=[
     {
         projectTitle:'Hot-Slots',
         description: 'Lorem Ipsum',
-        image: <img src='../asets/hot-slots.png' alt="hot-slots"/>, 
+        // image: url("src/components/asset/svg/hot-slots.png"), 
         sourceLink:'https://github.com/Ooh-LaLa/slot-machine',
         lastUpdated:'December 2022',
         deploymentLink: "https://hot-slots.netlify.app/"
@@ -10,7 +10,7 @@ const DUMMY_PROJECTS=[
     {
         projectTitle:'Zen Quote App',
         description: 'Lorem Ispum',
-        image: <img src='src/components/asset/svg' alt="zen-quote-app"/>, 
+        // image: <img src="src/components/asset/svg/zen.png" alt="zen-quote-app"/>, 
         sourceLink:'https://github.com/Ooh-LaLa/zen_app_front_end',
         lastUpdated:'March 2023'
     },
