@@ -25,7 +25,7 @@ const App=()=> {
                     <CSSTransition timeout={300} classNames='fade' key={location.key}>
                         <Switch location={location}>
                             <Route path="/" exact>
-                                <Redirect to="/" />
+                                <Redirect to="/home" />
                             </Route>
                             <Route path="/home">
                                 <Home />
@@ -48,8 +48,7 @@ const App=()=> {
                             </Route>
                             <Route path="*">
                                 <Redirect to="/" />
-                            </Route>
-                            {/* <ProgrammingSkills /> */}
+                            </Route> 
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
