@@ -104,7 +104,7 @@ const ContactForm = (props) => {
                 <h1 style={{ color: nonThemeColor }}>Leave A Message</h1>
                 <form onFocus={formFocusedHandler} action="" method="POST" onSubmit={formSubmitHandler} className={formClasses} name="form-name" type="hidden" value="contact" netlify-honeypot="bot-field" data-netlify="true">
                 <p class="hidden">
-				<label hidden="true"><input name="bot-field"/></label>
+				<label hidden><input name="bot-field"/></label>
 			</p>
                     <input type="text"  
                         id="fName"

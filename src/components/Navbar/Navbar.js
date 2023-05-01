@@ -11,7 +11,7 @@ import { themeActions } from "../../store/theme";
 import ColorModal from "./ColorModal";
 import Routes from "./Routes";
 
-import PersonalData from "../../Data/PersonalData";
+// import PersonalData from "../../Data/PersonalData";
 
 const Navbar = () => {
 
