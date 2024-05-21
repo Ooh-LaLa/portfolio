@@ -68,9 +68,10 @@ main{
     border: solid 5px;
     border-radius: 5%;
     height: 23rem;
-    width: 13rem;
+    /* width: 13rem; */
     object-fit: contain;
 }
+
 
 .connectText{
     margin-top: 20rem;
