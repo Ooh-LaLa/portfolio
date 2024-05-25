@@ -11,6 +11,8 @@ import Education from './components/Education/Education';
 import Certifications from "./components/Certifications/Certifications";
 import Projects from "./components/Projects/Project";
 import AboutMe from "./components/About Me/AboutMe";
+import MailchimpForm from "./components//MailChimpForm/MailchimpForm";
+
 
 import { useSelector } from "react-redux";
 
@@ -45,6 +47,8 @@ const App=()=> {
 
                             <Route path="/projects">
                                 <Projects />
+                            </Route><Route path="/subscribe">
+                                <MailchimpForm /> {/* Add a route for the Mailchimp form */}
                             </Route>
                             <Route path="*">
                                 <Redirect to="/" />

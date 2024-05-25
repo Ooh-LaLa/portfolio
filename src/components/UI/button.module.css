@@ -18,7 +18,7 @@
 .btn:disabled:hover,
 .btn:disabled:active{
   background-color: #ccc;
-  color: #292929;
+  color: #757575; /* Darkened disabled text color for better contrast */
   border-color: #ccc;
   cursor: not-allowed;
 }
