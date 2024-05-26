@@ -9,6 +9,7 @@
 }
 
 .contactForm {
+	background-color: #EDF9FE;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,10 +22,10 @@
 }
 
 .Input {
-	width: 100%;
+	width: 80%;
 	margin-bottom: 1rem;
 	padding: 0.5rem;
-	border: 1px solid #ccc;
+	border: 1px solid rgb(128, 0, 128);
 	border-radius: 4px;
 }
 
@@ -34,10 +35,18 @@
 
 .textArea {
 	height: 150px;
+	width: 325px;
 	resize: none;
 }
 
 .sendBtn {
+	border: 1px solid rgb(128, 0, 128);
+	border-radius: 4px;
 	margin-top: 1rem;
 	text-align: center;
 }
+
+ .h1Message {
+	background-color: #EDF9FE;
+	
+} 

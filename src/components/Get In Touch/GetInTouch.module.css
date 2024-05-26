@@ -25,6 +25,7 @@
 }
 .contactIcon {
 	width: 4rem;
+	margin-top: 10%;
 	height: 4rem;
 	border-radius: 50%;
 	color: aliceblue;
@@ -33,6 +34,7 @@
 	justify-content: center;
 }
 .contactValue {
+	margin-top: 10%;
 	margin-left: 2rem;
 	font-size: 2rem;
 }

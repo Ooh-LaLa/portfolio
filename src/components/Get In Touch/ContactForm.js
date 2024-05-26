@@ -90,7 +90,7 @@ const ContactForm = (props) => {
                 message="Are you sure you want to leave? All your entered data will be lost!"
             />
             <div className={classes.contactFormCard}>
-                <h1 style={{ color: nonThemeColor }}>Leave A Message</h1>
+                <h1 className="h1Message animate__animated animate__backInRight"  style={{ color: !nonThemeColor}}>Leave A Message</h1>
                 <form
                     onFocus={formFocusedHandler}
                     onSubmit={formSubmitHandler}
